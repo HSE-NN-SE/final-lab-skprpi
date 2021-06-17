@@ -39,4 +39,6 @@ jobs:
           username: ${{ secrets.DOCKER_LOGIN }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: step3
-        run: docker login && docker push maxmimfafa/calculator
+        run:  | 
+          docker login 
+          docker push maxmimfafa/calculator 
